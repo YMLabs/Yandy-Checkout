@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Shopping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/general.css" />
+    <link rel="stylesheet" href="assets/css/cartInformation.css" />
+    <style>
+      button#info-tab::before {content: "";font-size: 20px;font-weight: 500;}
+    </style>
+  </head>
+  <body>
+    <section class="checkout-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="checkout-fill">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link checked"
+                    id="cart-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#cart"
+                    type="button"
+                    role="tab"
+                    aria-controls="cart"
+                    aria-selected="true"
+                    onclick="window.location.href = './cartPage.html';"
+                  >
+                    Cart
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link checked"
+                    id="info-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#info"
+                    type="button"
+                    role="tab"
+                    aria-controls="info"
+                    aria-selected="true"
+                    onclick="window.location.href = './checkout.html';"
+                  >
+                    Information
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="shipping-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#shipping"
+                    type="button"
+                    role="tab"
+                    aria-controls="shipping"
+                    aria-selected="true"
+                  >
+                    Shipping
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="payment-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#payment"
+                    type="button"
+                    role="tab"
+                    aria-controls="payment"
+                    aria-selected="false"
+                    onclick="window.location.href = './payment.html';"
+                  >
+                    Payment
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="shipping"
+                  role="tabpanel"
+                  aria-labelledby="shipping-tab"
+                >
+                  <table class="summary-table">
+                    <tbody>
+                      <tr class="contact-row">
+                        <td>Contact</td>
+                        <td>user@mail.com</td>
+                        <td class="change"><a href="">Change</a></td>
+                      </tr>
+                      <tr class="shipping-to">
+                        <td>Ship to</td>
+                        <td>user@mail.com</td>
+                        <td class="change"><a href="">Change</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="shipping-method">
+                  <h2>Shipping Method</h2>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="radio" name="" id=""></td>
+                        <td>Economy - Get it by 5/17</td>
+                        <td>$6.95</td>
+                      </tr>
+                      <tr>
+                        <td><input type="radio" name="" id=""></td>
+                        <td>2 Day - Get it by 5/12</td>
+                        <td>$12.95</td>
+                      </tr>
+                      <tr>
+                        <td><input type="radio" name="" id=""></td>
+                        <td>Expedited - Get it by 5/11</td>
+                        <td>$19.95</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="bottom-btns">
+                    <a href="./checkout.html">&#10094; Return to Checkout</a>
+                    <button onclick="window.location.href = './payment.html';">CONTINUE TO PAYMENT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 p20">
+            <div class="checkout-summary">
+              <table class="table">
+                <tbody>
+                  <tr class="table-data">
+                    <td class="item-box">
+                      <div class="cart-item d-flex">
+                        <div class="cart-item-image">
+                          <a href="">
+                            <img
+                              src="assets/images/product-img.webp"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div class="cart-product-info px10">
+                          <h3 class="product-name">
+                            <strong>
+                              <a href="">Floral Fetish Crotchless Lace Panty</a>
+                            </strong>
+                          </h3>
+                          <div class="product-details">
+                            <p>
+                              <span class="description-label">Lime /</span>
+                              <span class="description-value">Medium</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="price">
+                      <p class="f-12">$7.95</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="d-block">
+                <tbody class="d-block">
+                  <tr class="gift">
+                    <td class="gift" colspan="1">
+                      <div class="gift-box">
+                        <form action="">
+                          <input
+                            type="text"
+                            placeholder="Gift card and discount code"
+                          />
+                          <button type="submit">Apply</button>
+                        </form>
+                      </div>
+                    </td>
+                    <td class="d-none"></td>
+                  </tr>
+                  <tr class="d-flex sub-total">
+                    <td class="subtotal">Subtotal</td>
+                    <td class="sub-price">$7.95</td>
+                  </tr>
+                  <tr class="d-flex shipping">
+                    <td class="shipping">Shipping</td>
+                    <td class="">Calculated at next step</td>
+                  </tr>
+                  <tr class="d-flex total">
+                    <td class="total">Total</td>
+                    <td class="">
+                      <span class="w400 pr5 f-12">USD</span>$7.95
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets /js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js"
+      integrity="sha512-5qbIAL4qJ/FSsWfIq5Pd0qbqoZpk5NcUVeAAREV2Li4EKzyJDEGlADHhHOSSCw0tHP7z3Q4hNHJXa81P92borQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

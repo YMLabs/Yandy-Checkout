@@ -1,0 +1,158 @@
+@font-face {
+  font-family: Lato-Regular;
+  src: url("../fonts/Lato-font/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: Lato-Bold;
+  src: url("../fonts/Lato-font/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: Lato-Heavy;
+  src: url("../fonts/Lato-font/Lato-Black.ttf");
+}
+
+button {
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.font-regular {
+  font-family: Lato-Regular;
+}
+.font-bold {
+  font-family: Lato-Bold;
+}
+.font-heavy {
+  font-family: Lato-Heavy;
+}
+.background-light{background-color: #f9f9f9;}
+.cart-item-image {width: 40px;}
+
+h3.product-name a {font-size: 12px;text-decoration: none;color: #000;padding-bottom: 8px;display: block;}
+
+.product-details p {font-size: 12px;}
+section.checkout-page {background: linear-gradient(90deg, #0000 55%, #f9f9f9 0%);}
+tr.table-data td {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000;
+}
+tr.gift {display: flex;padding-bottom: 15px;border-bottom: 1px solid #eee;width: 100%;justify-content: center;}
+
+td.gift {display: block;width: 100%;}
+
+.gift-box form {display: flex;justify-content: space-between;}
+
+.gift-box form input[type="text"] {width: 80%;height: 35px;padding: 10px;font-size: 12px;}
+
+.gift-box form button {width: 20%;margin-left: 20px;height: 35px;border: 1px solid #000;background: #fff;font-size: 14px;text-transform: uppercase;font-weight: 500;}
+tr.sub-total {justify-content: space-between;padding: 10px 0px;font-size: 12px;font-weight: 500;}
+
+tr.shipping {justify-content: space-between;font-size: 12px;padding: 10px 0px 30px;}
+
+tr.shipping td.shipping {font-weight: 500;}
+tr.total {justify-content: space-between;font-size: 14px;font-weight: 600;}
+
+.checkout-fill .nav-tabs li.nav-item button.checked::before {content: "";background: #fff url(../images/check-solid.svg);background-position: center;background-size: 50%;background-repeat: no-repeat;filter: invert(1);border: #fff;}
+
+.checkout-fill .nav-tabs {border: none;}
+
+.checkout-fill .nav-tabs li.nav-item {border: none;}
+
+.checkout-fill .nav-tabs li.nav-item button {border: none;display: flex;align-items: center;font-size: 14px;font-weight: 500;color: #000;}
+
+.checkout-fill {padding: 20px 0px 50px;}
+
+.checkout-fill .nav-tabs li.nav-item button::before {content: "";width: 40px;height: 40px;background: #fff;display: inline-flex;align-items: center;justify-content: center;margin-right: 10px;border-radius: 50px;color: #000;border: 1px solid #000;}
+
+button#info-tab::before {content: "2";font-size: 20px;font-weight: 500;}
+
+button#shipping-tab::before {content: "3";
+    font-size: 20px;
+    font-weight: 500;}
+
+button#payment-tab::before {content: "4";
+    font-size: 20px;
+    font-weight: 500;}
+    .checkout-fill .nav-tabs li.nav-item button.active::before {
+      background: #e7418a;
+      border: #e7418a;
+      color: #fff;
+  }
+  .checkout-fill div#myTabContent {padding: 30px 20px 0px;}
+
+table.summary-table{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+table.summary-table td{
+  padding: 2rem;
+}
+
+table.summary-table td.change a{
+  color: #000;
+}
+
+table.summary-table tr td:first-child{
+  color: #6f6f6f;
+}
+
+table.summary-table tr{
+  border-bottom: 1px solid #dedede;
+}
+
+.shipping-method{
+  margin: 2rem 0 1rem 0;
+}
+
+div.shipping-method table{
+  margin-bottom: 2rem;
+  width: 100%;
+}
+div.shipping-method table tr{
+  border-bottom: 1px solid #dedede;
+}
+div.shipping-method table td{
+  padding: 2rem;
+}
+
+div.billing-address table{
+  margin-bottom: 2rem;
+  width: 100%;
+}
+div.billing-address table tr{
+  border-bottom: 1px solid #dedede;
+}
+div.billing-address table td{
+  padding: 2rem;
+}
+
+div.bottom-btns{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+div.bottom-btns a{
+  color: #000;
+  font-family: Lato-Bold;
+}
+
+div.bottom-btns button{
+  padding: 0.7rem;
+  background: #000;
+  color: #fff;
+  font-family: Lato-Bold;
+  transition: ease-in-out 0.3s;
+}
+div.bottom-btns button:hover{
+  background: #e7418a;
+  border: none;
+}
+
+h2{
+  font-family: Lato-Bold;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/cartPage.css" />
+  </head>
+  <body>
+    
+    <section class="cart-section py50 py-md100">
+    <div class="container">
+
+      <div class="header">
+        <p class="py10">
+          <span class="h1 mr10">Your Cart</span>
+          <span class="total-item-amount font-bold">1 item</span>
+        </p>
+      </div>
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="item-cart">
+      <div class="cart">
+        <table class="cart-table">
+          <!-- <caption class="table-caption">
+            Items
+          </caption> -->
+
+          <thead class="table-head">
+            <tr class="table-cols">
+              <th scope="col item-col">Item</th>
+              <th scope="col">Price</th>
+              <th class="col">Qty</th>
+              <th scope="col">Total</th>
+              <th scope="col">
+                <span class="visually-hidden">Action</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-data">
+              <td class="item-box">
+                <div class="cart-item flex">
+                  <div class="cart-item-image">
+                    <a href="">
+                      <img
+                        src="assets/images/product-img.webp"
+                        height="200"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="cart-product-info">
+                    <h3 class="product-name">
+                      <strong>
+                        <a href="">Floral Fetish Crotchless Lace Panty</a>
+                      </strong>
+                    </h3>
+                    <div class="product-details">
+                      <p>
+                        <span class="description-label">Brand:</span>
+                        <span class="description-value"
+                          >Seven 'Til Midnight</span
+                        >
+                      </p>
+                      <p>
+                        <span class="description-label">SKU:</span>
+                        <span class="description-value">187780</span>
+                      </p>
+                      <p>
+                        <span class="description-label">Color:</span>
+                        <span class="description-value">Lime</span>
+                      </p>
+                      <p>
+                        <span class="description-label">Size:</span>
+                        <span class="description-value">Medium</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="price">
+                <div class="product-price">
+                  <p>$<span class="price-value">7.95</span></p>
+                </div>
+              </td>
+              <td class="qty">
+                <div class="quantity">
+                  <input
+                    class="product-quantity-input"
+                    value="1"
+                    type="number"
+                    name=""
+                    id=""
+                    min="0"
+                  />
+                </div>
+              </td>
+              <td class="total-price">
+                <div class="product-price-total">
+                  <p>$<span class="price-value">7.95</span></p>
+                </div>
+              </td>
+              <td>
+                <div class="remove-product">
+                  <img src="assets/images/cross.png" alt="" />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="cart-order-summary">
+      <h3 class="font-heavy">Order Summary</h3>
+      <div class="free-shipping-progress">
+        <div class="progress-bar-content flex align-items-center">
+          <p>$0</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p>$80</p>
+        </div>
+        <p class="mb10">
+          You are <span class="font-bold">$72.05</span> away from
+          <span class="font-bold">free shipping.</span>
+        </p>
+        <small> Free Shipping is available for all orders over $80. </small>
+      </div>
+      <div class="line" style="border: 0.5px solid"></div>
+      <div class="order-checkout">
+        <div class="order-total-section flex">
+          <p>Subtotal:</p>
+          <p>$ <span class="order-to">7.95</span> USD</p>
+        </div>
+        <small>Taxes and shipping calculated at checkout</small>
+        <div class="order-checkout-buttons">
+          <button class="update">UPDATE</button>
+          <button class="checkout" onclick="window.location.href = './checkout.html';">CHECK OUT</button>
+        </div>
+        <div class="payment-gateway-buttons flex">
+          <button class="shoppay">
+            <img src="assets/images/shoppay.png" alt="" />
+          </button>
+          <button class="paypal">
+            <img src="assets/images/paypal.png" alt="" />
+          </button>
+          <button class="gpay">
+            <img src="assets/images/gpay.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+
+    </div>
+
+  </section>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js" integrity="sha512-5qbIAL4qJ/FSsWfIq5Pd0qbqoZpk5NcUVeAAREV2Li4EKzyJDEGlADHhHOSSCw0tHP7z3Q4hNHJXa81P92borQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+  </body>
+</html>
